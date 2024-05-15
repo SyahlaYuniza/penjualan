@@ -23,6 +23,10 @@ use App\Models\OrderDetail;
 |
 */
 
+Route::get('/pass', function(){
+    return bcrypt('admin');
+});
+
 Route::get('/', [FrontController::class, 'index'])->name('front.index');
 Route::get('/produk', [FrontController::class, 'product'])->name('front.product');
 Route::get('/category/{slug}', [FrontController::class,'categoryProduct'])->name('front.category');

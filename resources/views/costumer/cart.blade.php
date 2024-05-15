@@ -200,7 +200,6 @@
                                 </td>
                                 <td>
                                     <div class="checkout_btn_inner d-flex align-items-center">
-
                                         @if ($cart->count())
                                             <a class="gray_btn" href=" {{route('home.product')}} ">Lanjutkan Berbelanja</a>
                                             <a class="primary-btn ml-2" href=" {{route('home.checkout')}} ">Checkout</a>
@@ -212,7 +211,6 @@
                                     </div>
                                 </td>
                             </tr>
-
                     </tbody>
                 </table>
             </div>
