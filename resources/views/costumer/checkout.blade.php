@@ -130,8 +130,8 @@
 <!--================End Checkout Area =================-->
 @endsection
 
-{{-- @section('js')
-    <script type="text/javascript">
+@section('js')
+    {{-- <script type="text/javascript">
         $('#province_id').on('change', function() {
             $.ajax({
                 url: "{{ url('/api/city') }}",
@@ -186,5 +186,5 @@
             // $('#resi').append('<input type="text" class="form-control" name="cost" value="'+total+'" disabled required>')
         })
 
-    </script>
+    </script> --}}
 @endsection

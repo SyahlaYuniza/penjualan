@@ -129,8 +129,7 @@ class OrderController extends Controller
     }
 
     public function detail(){
-        $order = Order::where('customer_id', Auth::guard('costumer')->user()->id)->get();
-
+        $order = Order::with('payment')->where('customer_id', Auth::guard('costumer')->user()->id)->orderByDesc('created_at')->get();
         return view('costumer.detail-order', compact('order'));
     }
 

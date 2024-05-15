@@ -15,7 +15,7 @@
     <div class="container-fluid">
         <div class="animated fadeIn">
             <div class="row">
-              	
+
               	<!-- BAGIAN INI AKAN MENG-HANDLE FORM INPUT NEW CATEGORY  -->
                 <div class="col-md-4">
                     <div class="card">
@@ -23,7 +23,7 @@
                             <h4 class="card-title">Kategori Baru</h4>
                         </div>
                         <div class="card-body">
-                          
+
                             <form action="{{ route('category.store') }}" method="post">
                                 @csrf
                                 <div class="form-group">
@@ -32,7 +32,7 @@
                                     <p class="text-danger">{{ $errors->first('name') }}</p>
                                 </div>
                                 <div class="form-group">
-                                    <label for="parent_id">Kategori</label>
+                                    <label for="parent_id">Parent Kategori</label>
                                       <!-- VARIABLE $PARENT PADA METHOD INDEX KITA GUNAKAN DISINI -->
                                     <!-- UNTUK MENAMPILKAN DATA CATEGORY YANG PARENT_ID NYA NULL -->
                                     <!-- UNTUK DIPILIH SEBAGAI PARENT TAPI SIFATNYA OPTIONAL -->
@@ -48,12 +48,12 @@
                                     <button class="btn btn-primary btn-sm">Tambah</button>
                                 </div>
                             </form>
-                          
+
                         </div>
                     </div>
                 </div>
                 <!-- BAGIAN INI AKAN MENG-HANDLE FORM INPUT NEW CATEGORY  -->
-              
+
                 <!-- BAGIAN INI AKAN MENG-HANDLE TABLE LIST CATEGORY  -->
                 <div class="col-md-8">
                     <div class="card">
@@ -88,16 +88,16 @@
                                       	<!-- LOOPING DATA KATEGORI SESUAI JUMLAH DATA YANG ADA DI VARIABLE $CATEGORY -->
                                         @forelse ($category as $val)
                                         <tr>
-                                            <td></td>
+                                            <td>{{ $loop->iteration }}</td>
                                             <td><strong>{{ $val->name }}</strong></td>
-                                          
+
                                           	<!-- MENGGUNAKAN TERNARY OPERATOR, UNTUK MENGECEK, JIKA $val->parent ADA MAKA TAMPILKAN NAMA PARENTNYA, SELAIN ITU MAKA TANMPILKAN STRING - -->
                                             <td>{{ $val->parent ? $val->parent->name:'-' }}</td>
-                                          
+
                                             <!-- FORMAT TANGGAL KETIKA KATEGORI DIINPUT SESUAI FORMAT INDONESIA -->
                                             <td>{{ $val->created_at->format('d-m-Y') }}</td>
                                             <td>
-                                              
+
                                                 <!-- FORM ACTION UNTUK METHOD DELETE -->
                                                 <form action="{{ route('category.destroy', $val->id) }}" method="post">
                                                     <!-- KONVERSI DARI @ CSRF & @ METHOD AKAN DIJELASKAN DIBAWAH -->

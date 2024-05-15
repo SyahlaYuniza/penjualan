@@ -3,27 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use App\Models\Cart;
-use App\Models\Courier;
-use App\Models\Customer;
 use App\Models\Order;
-use App\Models\OrderDetail;
-use App\Models\Product;
-use App\Models\Province;
-use Kavist\RajaOngkir\Facades\RajaOngkir;
-use Illuminate\Support\Str;
-use App\Models\Citie;
-use App\Models\Payment;
 use Illuminate\Support\Carbon;
-use Illuminate\Support\Facades\DB;
 use PDF;
 
 class OrderController extends Controller
 {
     public function index()
     {
-        $orders = Order::with(['customer.district.citie.province'])
+        $orders = Order::with(['customer.district.citie.province.payment'])
             ->orderBy('created_at', 'DESC');
 
         if (request()->q != '') {

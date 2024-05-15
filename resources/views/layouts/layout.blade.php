@@ -17,6 +17,12 @@
   @yield('css')
 
   <link rel="stylesheet" href="{{asset("assets/css/style.css")}}">
+
+  <style>
+    .blog-banner-area{
+        height: 150px;
+    }
+</style>
 </head>
 <body>
   <!--================ Start Header Menu Area =================-->
@@ -153,3 +159,4 @@
   @yield('js')
 </body>
 </html>
+

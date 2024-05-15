@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CostumersController;
 use App\Http\Controllers\HomeController;
@@ -39,12 +40,13 @@ Route::get('/coba', function () {
     return view('costumer.cart');
 });
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+// Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+//     return view('dashboard');
+// })->name('dashboard');
 
 Route::group(['middleware' => ['auth']], function () {
 
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     /* route product */
     Route::get('auth/product', [ProductController::class, 'index'])->name('product.index');
     Route::get('create/product', [ProductController::class, 'create'])->name('product.create');
