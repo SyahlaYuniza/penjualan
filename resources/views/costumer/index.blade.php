@@ -17,15 +17,19 @@
         <div class="row no-gutters align-items-center pt-60px">
           <div class="col-5 d-none d-sm-block">
             <div class="hero-banner__img">
-              <img class="img-fluid" src="{{asset('assets/img/home/hero-banner.png')}}" alt="">
+              <img class="img-fluid" src="{{asset('assets/img/home/mills4.png')}}" alt="">
             </div>
           </div>
           <div class="col-sm-7 col-lg-6 offset-lg-1 pl-4 pl-md-5 pl-lg-0">
             <div class="hero-banner__content">
-              <h4>Shop is fun</h4>
-              <h1>Browse Our Premium Product</h1>
-              <p>Us which over of signs divide dominion deep fill bring they're meat beho upon own earth without morning over third. Their male dry. They are great appear whose land fly grass.</p>
-              <a class="button button-hero" href=" {{route('home.product')}} ">Browse Now</a>
+              <h4>MILLS OFFICIAL APPAREL INDONESIA NATIONAL TEAM </h4>
+              <h1>
+              YOUR NEXT LEVEL APPAREL 
+              </h1>
+              <p>
+              Telusuri Produk Premium kami, Eksplorasi mode terbaru dan ciptakan gaya Anda sendiri dengan Koleksi Eksklusif dari Mills.
+              </p>
+              <a class="button button-hero" href=" {{route('home.product')}} ">Telusuri Produk</a>
             </div>
           </div>
         </div>
@@ -76,13 +80,14 @@
                 <div class="card-product__img">
                   <img class="card-img" src="{{ asset('storage/products/' . $row->image) }}" alt="{{ $row->name }}">
                   <ul class="card-product__imgOverlay">
-                    <li><button><i class="ti-search"></i></button></li>
-                    <li><a href="{{ url('/product/' . $row->slug) }}"><button><i class="ti-shopping-cart"></i></button></a></li>
-                    <li><button><i class="ti-heart"></i></button></li>
+                    <li><a href="{{ url('/product/' . $row->slug) }}"><button><i class="ti-search"></i></button></a></li>
+                    
+                    <!-- <li><a href="{{ url('/product/' . $row->slug) }}"><button><i class="ti-shopping-cart"></i></button></a></li> -->
+                    <!-- <li><button><i class="ti-heart"></i></button></li> -->
                   </ul>
                 </div>
                 <div class="card-body">
-                  <p>{{ $row->category->name}}</p>
+                  <p>{{$row->category->name}}</p>
                   <h4 class="card-product__title"><a href="single-product.html">{{$row->name}}</a></h4>
                   <p class="card-product__price">Rp. {{ number_format($row->price) }}</p>
                 </div>

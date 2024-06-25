@@ -34,8 +34,8 @@
                 <div class="col-lg-6">
                     <div class="login_box_img">
                         <div class="hover">
-                            <h4>Already have an account?</h4>
-                            <p>There are advances being made in science and technology everyday, and a good example of this is the</p>
+                            <h4>Sudah Punya Akun?</h4>
+                            <p>Selamat Datang di Mills Store Sport, Masuk untuk melanjutkan belanja!</p>
                             <a class="button button-account" href="{{Route('costumer.login')}}">Login Now</a>
                         </div>
                     </div>
@@ -46,7 +46,7 @@
                         <form class="row login_form" method="POST" action="{{ route('costumer.register.post') }}" id="register_form" >
                             @csrf
                             <div class="col-md-12 form-group">
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" :value="old('name')" required autofocus autocomplete="name">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="" :value="old('name')" required autofocus autocomplete="name">
                             </div>
                             <div class="col-md-12 form-group">
                                 <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" name="email" :value="old('email')" required>

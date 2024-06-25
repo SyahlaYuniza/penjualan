@@ -32,15 +32,16 @@
 				<div class="col-lg-6">
 					<div class="login_box_img">
 						<div class="hover">
-							<h4>New to our website?</h4>
-							<p>There are advances being made in science and technology everyday, and a good example of this is the</p>
-							<a class="button button-account" href="{{ route('costumer.register')}}">Create an Account</a>
+							<h4>Buat Akun Baru</h4>
+							<p>Nikmati pengalaman belanja dan Temukan semua yang Anda butuhkan di Mills!
+							</p>
+							<a class="button button-account" href="{{ route('costumer.register')}}">Buat Akun</a>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-6">
 					<div class="login_form_inner">
-						<h3>Log in to enter</h3>
+						<h3>Silahkan Login</h3>
                         <form class="row login_form" method="POST" action="{{ route('costumer.login.post') }}" id="contactForm" >
                             @csrf
 							<div class="col-md-12 form-group">
@@ -52,12 +53,12 @@
 							<div class="col-md-12 form-group">
 								<div class="creat_account">
                                     <input type="checkbox" id="f-option2" name="remember" {{ old('remember') ? 'checked' : '' }}>
-									<label for="f-option2">Remember Me</label>
+									<label for="f-option2">Ingat Saya</label>
 								</div>
 							</div>
 							<div class="col-md-12 form-group">
 								<button type="submit" value="submit" class="button button-login w-100">Log In</button>
-								<a href="#">Forgot Password?</a>
+								<a href="#">Lupa Password?</a>
 							</div>
 						</form>
 					</div>

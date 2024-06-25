@@ -23,8 +23,8 @@
                 <h1>Contact Us</h1>
                 <nav aria-label="breadcrumb" class="banner-breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+          <li class="breadcrumb-item"><a href="#"></a></li>
+          <!-- <li class="breadcrumb-item active" aria-current="page">Contact</li> -->
         </ol>
       </nav>
             </div>
@@ -34,10 +34,12 @@
 <!-- ================ end banner area ================= -->
 
 <!-- ================ contact section start ================= -->
+
 <section class="section-margin--small">
 <div class="container">
   <div class="d-none d-sm-block mb-5 pb-4">
-    <div id="map" style="height: 420px;"></div>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15780.508470759873!2d116.104605!3d-8.5837748!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcdc10046f93b2d%3A0x68ab703cc0d02b1d!2sMILLS%20STORE%20LOMBOK!5e0!3m2!1sid!2sid!4v1718973668000!5m2!1sid!2sid" width="1100" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- <div id="map" style="height: 420px;"></div>
     <script>
       function initMap() {
         var uluru = {lat: -25.363, lng: 131.044};
@@ -60,8 +62,8 @@
       }
 
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&callback=initMap"></script>
-
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&callback=initMap"></script> -->
+    
   </div>
 
 
@@ -70,26 +72,26 @@
       <div class="media contact-info">
         <span class="contact-info__icon"><i class="ti-home"></i></span>
         <div class="media-body">
-          <h3>California United States</h3>
-          <p>Santa monica bullevard</p>
+          <h3>Mills Store Sport Lombok</h3>
+          <p>Jl. Catur Warga No.9, Mataram</p>
         </div>
       </div>
       <div class="media contact-info">
         <span class="contact-info__icon"><i class="ti-headphone"></i></span>
         <div class="media-body">
-          <h3><a href="tel:454545654">00 (440) 9865 562</a></h3>
-          <p>Mon to Fri 9am to 6pm</p>
+          <h3><a href="tel:454545654">08 177 903 3231</a></h3>
+          <p>Setiap Hari, 09.00 - 17.00 WITA </p>
         </div>
       </div>
       <div class="media contact-info">
         <span class="contact-info__icon"><i class="ti-email"></i></span>
         <div class="media-body">
-          <h3><a href="mailto:support@colorlib.com">support@colorlib.com</a></h3>
-          <p>Send us your query anytime!</p>
+          <h3><a href="mailto:support@colorlib.com">info@mills.co.id</a></h3>
+          <p>Kirim Pertanyaanmu Kapan Pun</p>
         </div>
       </div>
     </div>
-    <div class="col-md-8 col-lg-9">
+    <!-- <div class="col-md-8 col-lg-9">
       <form action="#/" class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
         <div class="row">
           <div class="col-lg-5">
@@ -113,7 +115,7 @@
           <button type="submit" class="button button--active button-contactForm">Send Message</button>
         </div>
       </form>
-    </div>
+    </div> -->
   </div>
 </div>
 </section>

@@ -30,7 +30,7 @@ active
       <div class="row">
         <div class="col-xl-3 col-lg-4 col-md-5">
           <div class="sidebar-categories">
-            <div class="head">Browse Categories</div>
+            <div class="head"></div>
             <ul class="main-categories">
               <li class="common-filter">
                 <ul>

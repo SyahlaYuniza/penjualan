@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <title>Aroma Shop - @yield('title')</title>
+  <title>Mills Store Sport - @yield('title')</title>
     {{-- <link rel="icon" href="img/Fevicon.png" type="image/png"> --}}
   <link rel="stylesheet" href="{{asset("assets/vendors/bootstrap/bootstrap.min.css")}}">
   <link rel="stylesheet" href="{{asset("assets/vendors/fontawesome/css/all.min.css")}}">
@@ -53,7 +53,7 @@
             <ul class="nav-shop">
 
               @if(Auth::guard('costumer')->check())
-                    <li class="nav-item"><button><a href=" {{route('home.orderdetail')}} "><i class="ti-list"></i></a></button></li>
+                    <li class="nav-item"><button><a href=" {{route('home.orderdetail')}} "><i class="ti-wallet"></i></a></button></li>
                     <li class="nav-item"><button><a href=" {{route('home.list_cart')}} "><i class="ti-shopping-cart"></i></a><span class="nav-shop__circle"> {{$cart->count()}} </span></button> </li>
 
                     <li class="nav-item submenu dropdown">
@@ -69,7 +69,7 @@
                     </li>
                 </div>
             @else
-                <li class="nav-item"><button><i class="ti-list"></i></button></li>
+                <li class="nav-item"><button><i class="ti-wallet"></i></button></li>
                 <li class="nav-item"><button><a href="cart"><i class="ti-shopping-cart"></i></a></span></button> </li>
                 <li class="nav-item"><a class="button button-header" href="{{ route('costumer.login') }}">Login</a></li>
             @endif
@@ -94,10 +94,10 @@
 						<div class="single-footer-widget tp_widgets">
 							<h4 class="footer_title large_title">Our Mission</h4>
 							<p>
-								Memperkenalkan produk asli Majalengka kepada Indonesia, dengan kualitas terbaik.
+              Memperkenalkan produk lokal dengan kualitas internasional.
 							</p>
 							<p>
-								Memperkenalkan produk lokal dengan kualitas internasional.
+              Mills Store Sport akan berkembang pesat untuk pakaian olahraga, karena produk berkualitas tinggi, material berteknologi mumpuni, design yang menarik dan harga yang terjangkau.
 							</p>
 						</div>
 					</div>

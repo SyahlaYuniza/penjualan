@@ -14,8 +14,8 @@ return [
     |
     */
 
-    'title' => 'MyShop',
-    'title_prefix' => 'MYSH',
+    'title' => 'MILLS',
+    'title_prefix' => 'ADMIN',
     'title_postfix' => '',
 
     /*
@@ -45,8 +45,8 @@ return [
     |
     */
 
-    'logo' => '<b>My</b>Shop',
-    'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
+    'logo' => 'MILLS',
+    'logo_img' => 'vendor/adminlte/dist/img/mills3.jpg',
     'logo_img_class' => 'brand-image img-circle',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
