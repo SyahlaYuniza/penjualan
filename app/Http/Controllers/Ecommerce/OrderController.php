@@ -12,6 +12,7 @@ use App\Models\Cart;
 use Kavist\RajaOngkir\Facades\RajaOngkir;
 use App\Models\Product;
 use App\Models\Payment;
+use Barryvdh\DomPDF\PDF as DomPDFPDF;
 use Illuminate\Support\Carbon;
 use PDF;
 use Illuminate\Support\Facades\DB;
@@ -62,7 +63,7 @@ class OrderController extends Controller
 
         foreach ($cart as $row) {
             $cost = RajaOngkir::ongkosKirim([
-                'origin'       => 252,
+                'origin'       => 276,
                 'destination'  => $row->customer->citie_id,
                 'weight'       => $weight,
                 'courier'      => 'jne',

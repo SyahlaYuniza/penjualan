@@ -70,7 +70,7 @@
                 </div>
             @else
                 <li class="nav-item"><button><i class="ti-wallet"></i></button></li>
-                <li class="nav-item"><button><a href="cart"><i class="ti-shopping-cart"></i></a></span></button> </li>
+                <li class="nav-item"><button><a href="{{ route('costumer.login') }}"><i class="ti-shopping-cart"></i></a></span></button> </li>
                 <li class="nav-item"><a class="button button-header" href="{{ route('costumer.login') }}">Login</a></li>
             @endif
             </ul>
@@ -107,7 +107,7 @@
 							<ul class="list">
 								<li><a href="{{ route('home.index') }}">Home</a></li>
 								<li><a href="{{ route('home.product') }}">Produk</a></li>
-								<li><a href="#">Contact</a></li>
+								<li><a href="/contact">Contact</a></li>
 							</ul>
 						</div>
 					</div>
@@ -124,9 +124,11 @@
 					<div class="offset-lg-1 col-lg-3 col-md-6 col-sm-6">
 						<div class="single-footer-widget tp_widgets">
 							<h4 class="footer_title">Contact Us</h4>
-							<div class="ml-40">
-
-							</div>
+                  <ul class="list">
+                    <li>Whatsapp :<span> +62 817-7903-3231</span></li>
+                    <li>Instagram :<span> mills.store.lombok</span></li>
+                    <li>E-mail :<span> mills@mills.co.id</span></li>
+                  </ul>
 						</div>
 					</div>
 				</div>

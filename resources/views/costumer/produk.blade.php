@@ -130,11 +130,11 @@ active
                     <div class="card text-center card-product">
                       <div class="card-product__img">
                         <img class="card-img" src="{{ asset('storage/products/' . $row->image) }}" alt="{{ $row->name }}">
-                        <ul class="card-product__imgOverlay">
+                        {{-- <ul class="card-product__imgOverlay">
                           <li><button><i class="ti-search"></i></button></li>
                           <li><button><i class="ti-shopping-cart"></i></button></li>
                           <li><button><i class="ti-heart"></i></button></li>
-                        </ul>
+                        </ul> --}}
                       </div>
                       <div class="card-body">
                         <p>{{ $row->category->name}}</p>

@@ -55,7 +55,7 @@ class CartController extends Controller
 
         foreach ($cart as $row) {
             $cost = RajaOngkir::ongkosKirim([
-                'origin'       => 252,
+                'origin'       => 276,
                 'destination'  => $row->customer->city_id,
                 'weight'       => $weight,
                 'courier'      => 'jne',
